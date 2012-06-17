@@ -66,7 +66,7 @@ function wptuts_enqueue()
     wp_register_style('wptuts-jquery-ui-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/south-street/jquery-ui.css');
     wp_enqueue_style('wptuts-jquery-ui-style');
 
-    wp_register_script('wptuts-custom-js', get_template_directory_uri() . '/faq/faq.js', 'jquery-ui-accordion', '', true);
+    wp_register_script('wptuts-custom-js', get_template_directory_uri() . '/faq/faq.js', array('jquery-ui-accordion'), '', true);
     wp_enqueue_script('wptuts-custom-js');
 }
 
